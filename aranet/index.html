@@ -8,9 +8,9 @@
 	<title>ARANET</title>
 	<!--JQuery-->
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/rellax.js"></script>
     <!-- Hojas de estilos -->
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link href="https://file.myfontastic.com/mTkhX3WL4dpCyKkFVr7nQ8/icons.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -22,23 +22,27 @@
 		<a href="#"><img src="img/logo.png"></a>
 		
 		<div id="menu" >
+				<span class="icon-menu iconM" id="btm-menu"></span>
 			<ul>
 				<li><a href="#" id="head">Inicio</a></li>
 				<li><a href="#lorem">Aranet</a></li>
 				<li><a href="#servicio">Servicios</a></li>
 				<li><a href="#contacto">Contacto</a></li>
 				<li><a href="#nosotros">Sobre Nosotros</a></li>
+				<li ><a href="" class="sesion">Iniciar Sesión</a></li>
 			</ul>
 		</div>
 		
 	</header>
+	<div class=cuerpo>
 	<div class="pantalla">
 			<div class="promo">
 					<h2>BIENVENIDO A ARANET: NETVIDEO</h2>
 					<p>Disfruta de series y películas populares. Precio de lanzamiento $250, suscripción para nuevos clientes 100% bonificado (cupos limitados)</p>
 					<center><button>EMPIEZA TU PRUEBA GRATIS</button></center>
 				</div>
-		<img src="img/fondo.png" alt="">
+		<img src="img/fondo.png" alt="" id="fondo">
+		<img src="img/fondo1.png" alt="" id="fondo1">
 		<div class="fondoa"></div>
 	</div>
 	<div class="container" id="lorem">
@@ -101,34 +105,26 @@
 		</div>
 		<div class="clearfix"></div>
 		<div class="nosotros " id="nosotros">
-			<div class="caja"><h2>SOMOS</h2><img src="img/LOGO.B.png" style="width:200px">
-				<h2> ¿Quiénes somos?</h2>
-		
-				<p>Somos un grupo de profesionales  apasionados por la tecnología, nuestro objetivo es brindar productos de vanguardia a nuestros clientes.</p>
+			<div class="caja"><h2>SOMOS</h2><br><img src="img/LOGO.B.png" style="width:200px">
+				<br><h2> ¿Quiénes somos?</h2>
+				<p>Somos un grupo de profesionales  apasionados por la tecnología, nuestro objetivo es brindar productos de vanguardia a nuestros clientes.</p><br>
 			<h2>MISION</h2>	
-						<p> Brindar servicios de telecomunicaciones diferenciados adaptados a nuestros clientes con el objetivo de ser los elegidos.</p>
+						<p> Brindar servicios de telecomunicaciones diferenciados adaptados a nuestros clientes con el objetivo de ser los elegidos.</p><br>
 			<h2>Visión</h2> 
-					<p>	 Estamos comprometidos con las necesidades de nuestros clientes de forma transparente y eficaz para convertirnos en su partners de confianza.</p>
+					<p>	 Estamos comprometidos con las necesidades de nuestros clientes de forma transparente y eficaz para convertirnos en su partners de confianza.</p><br>
 					 <h2>Responsabilidad Social Empresarial</h2>
 				<p>	ARANET se enfoca a la gestión sustentable, convencidos que la creación de Valor solo se produce con el compromiso social, ya que la tecnología aporta al efectivo desarrollo económico y social del país. Nuestras acciones buscan fortalecer los ecosistemas social, económico y ambiental donde ARANET desarrolla sus operaciones, y trabajan por la promoción de crecimiento equitativo para mejorar la calidad de vida de las personas.
 
-					</p></div>
+					</p><br></div>
 		</div>
+	</div>
 		<footer class="footer">
 			<div class="caja2"><h2>ARANET</h2>
-			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores sequi aspernatur laboriosam, debitis rem officiis quidem voluptatum deserunt totam doloribus provident delectus eius amet eos optio quos ducimus itaque architecto?</div>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores sequi aspernatur laboriosam, debitis rem officiis quidem voluptatum deserunt totam doloribus provident delectus eius amet eos optio quos ducimus itaque architecto?</p></div>
 			<div class="jealogo"><a href=""><img src="img/jealogo.png"></a></div>
 			<div class="jea"><center><hr style="width: 50%"> <p>Pagina Web Diseñada por JEA Soluciones Informaticas - Todos los Derechos Reservados</p></center></div>
 		</footer>
-	<script>
-            var rellax = new Rellax('.rellax', {
-            // center: true
-            callback: function(position) {
-                // callback every position change
-                console.log(position);
-            }
-          });
-        </script>
-        <script type="text/javascript" src="main.js"></script>	
+		<script type="text/javascript" src="main.js"></script>	
+		<script type="text/javascript" src="menu.js"></script>
 </body>
 </html>

@@ -12,6 +12,9 @@ html, body {
 body {
  
 }
+#fondo1{
+	display: none;
+}
 img{
 	display: block;
 	max-width: 100%;
@@ -29,33 +32,35 @@ img{
 	width: 100%;
 	
 }
-.promo{
-	position: absolute;
-	top: 14em;
-	left: 5em;
-	width: 400px;
-	color: white;
-	z-index: 200;
-	
-}
+
 .fondoa{
 	position: absolute;
 	width: 100%;
-	height: 580px;
+	height: 100%;
 	top:0px;
 	background: rgba(0,0,0,0.67);
-background: -moz-linear-gradient(left, rgba(0,0,0,0.67) 0%, rgba(0,0,0,0.67) 44%, rgba(0,0,0,0.32) 56%, rgba(0,0,0,0) 67%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.67)), color-stop(44%, rgba(0,0,0,0.67)), color-stop(56%, rgba(0,0,0,0.32)), color-stop(67%, rgba(0,0,0,0)));
-background: -webkit-linear-gradient(left, rgba(0,0,0,0.67) 0%, rgba(0,0,0,0.67) 44%, rgba(0,0,0,0.32) 56%, rgba(0,0,0,0) 67%);
-background: -o-linear-gradient(left, rgba(0,0,0,0.67) 0%, rgba(0,0,0,0.67) 44%, rgba(0,0,0,0.32) 56%, rgba(0,0,0,0) 67%);
-background: -ms-linear-gradient(left, rgba(0,0,0,0.67) 0%, rgba(0,0,0,0.67) 44%, rgba(0,0,0,0.32) 56%, rgba(0,0,0,0) 67%);
-background: linear-gradient(to right, rgba(0,0,0,0.67) 0%, rgba(0,0,0,0.67) 44%, rgba(0,0,0,0.32) 56%, rgba(0,0,0,0) 67%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+	background: -moz-linear-gradient(left, rgba(0,0,0,0.67) 0%, rgba(0,0,0,0.67) 44%, rgba(0,0,0,0.32) 56%, rgba(0,0,0,0) 67%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.67)), color-stop(44%, rgba(0,0,0,0.67)), color-stop(56%, rgba(0,0,0,0.32)), color-stop(67%, rgba(0,0,0,0)));
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.67) 0%, rgba(0,0,0,0.67) 44%, rgba(0,0,0,0.32) 56%, rgba(0,0,0,0) 67%);
+	background: -o-linear-gradient(left, rgba(0,0,0,0.67) 0%, rgba(0,0,0,0.67) 44%, rgba(0,0,0,0.32) 56%, rgba(0,0,0,0) 67%);
+	background: -ms-linear-gradient(left, rgba(0,0,0,0.67) 0%, rgba(0,0,0,0.67) 44%, rgba(0,0,0,0.32) 56%, rgba(0,0,0,0) 67%);
+	background: linear-gradient(to right, rgba(0,0,0,0.67) 0%, rgba(0,0,0,0.67) 44%, rgba(0,0,0,0.32) 56%, rgba(0,0,0,0) 67%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+}
+.promo{
+	position: absolute;
+	top: 38%;
+	left: 8%;
+	width: 30%;
+	color: white;
+	z-index: 200;
+	
 }
 .promo h2{
 	margin-bottom: 30px;
 }
 .promo p{
+
 	text-align: justify;
 }
 .promo button{
@@ -68,38 +73,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	border-radius: 2px;
 }
 
-.icon1{
-	position: absolute;
-	width: 75px;
-	top: 8em;
-	left: 15em;
-}
-.icon2{
-	position: absolute;
-	width: 13em;
-	right: 80px;
-	top: 30em;
-	z-index: 4
-}
-.icon3{
-	position: absolute;
-	width: 10em;
-	right: 18em;
-	top: 10em;
-}
-.icon4{
-	position: absolute;
-	width: 7em;
-	bottom: 20em;
-	left: 2em;
-}
-.icon5{
-	position: absolute;
-	width: 12em;
-	top: 30em;
-	right: 50%;
-	z-index: 1;
-}
+
 /*--------------------CONTENEDOR 1--------------------*/
 .container{
 	color: white;
@@ -125,19 +99,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 /*----------------------CONTENEDOR 2----------------------*/
 .container2{
+	position: relative;
 	color: #333;
 	background-color: white;
-	
-	
 }
 .container2 h2{
 	font-size: 40px;
 	margin: 1em 0em;
 }
 .cajaservicio{
-	width: 35%;
-	margin: 20px 30px;
-	margin-left: 8%;
+	position: relative;
+	width: 30%;
+	height: 200px;
+	margin: 20px 70px;
+	left: 10%;
 	float: left;
 }
 .icono{
@@ -148,6 +123,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	color: #777;
 	font-size: 15px;
 	font-weight: bold;
+	text-align: justify;
 }
 .cajaservicio a{
 	font-size: 25px;
@@ -160,12 +136,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 /*-------------ARA PRDUCTOS DE CONECTIVIDAD----------------*/
 .arapc{
-	
+	position: relative;
 	background-image: url(../img/arapc.png);
-	width: 100%;
-	height: 450px;
+	height: 400px;
 	background-attachment: fixed;
-	background-repeat: none;
+	background-repeat: space;
+	background-position: right;
+	background-size: cover;
 }
 
 
@@ -210,41 +187,43 @@ box-shadow: 0px 1px 1px 0px rgba(250,118,118,1);
 	font-size: 19px;
 
 }
-/*----Contacto---*/
-#contacto {
+.sesion{
+	color: red !important;
+	padding: 3px;
+	border: 1px solid red;
+	border-radius: 2px;
+}
+.sesion:hover{
+	color: red !important;
+	font-size: 17px !important;
+}
+.iconM{
+	display: block;
+ 	width: 40px;
+ 	height: 40px;
+ 	font-size: 30px;
+ 	background: red;
+ 	color:white;
+ 	text-align: center;
+ 	line-height: 45px;
+ 	border-radius: 5px;	
+ 	cursor: pointer;
+ 	position: fixed;
+ 	top: 5px;
+ 	right: 8px;
+ 	z-index: 1500;
+ 	visibility: hidden;
+}
 
-}
-.info{
-	background-color: #333;
-	padding: 0px 50px;
-}
-.info h2{
-	color: white;
-	padding: 13px 0px;
-}
-.info h3{
-	color: red;
-	padding: 15px 0px;
-}
-.info p{
-	color: #777;
-	font-weight: bold;
-}
-.info a{
-	color: #777;
-	font-size: 25px;
-}
-.info a:hover{
-	color: red;
-	transition: 0.4s;
-}
 /*----------------------SECCION NOSOTROS----------------------*/
 .nosotros{
 	position: relative;
 	width: 100%;
-	height: 45em;
+	height: 55em;
 	background-image: url(../img/fondo2.png);
 	background-attachment: fixed;
+	background-position: right;
+	background-size: cover;
 }
 .caja{
 	position: absolute;
@@ -294,13 +273,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2b2a', end
 	color: white;
 	margin-left: 8%;
 	margin-top: 30px;
+	text-align: justify;
 }
 /*-------------------------------FORMULARIO-------------------------------------*/
+/*----Contacto---*/
+#contacto {
+
+}
+.divFormulario{
+	display: inline-flex;
+	width: 100%;
+	margin-top: 10px;
+	float: left;
+	margin-bottom: 80px;
+	margin-left: 15%;
+	
+}
+
 .formulario{
+	width: 40%;
 	background: #333;
-	width: 400px;
 	padding: 10px 20px;
 	box-sizing: border-box;
+	
 }
 .formulario h2{
 	color: white;
@@ -331,39 +326,46 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2b2a', end
 	font-weight: bold;
 	cursor: pointer;
 }
-
-.divFormulario{
-	width: 100%;
-	display: inline-flex;
-	margin-top: 10px;
-	margin:0px auto;
-	float: left;
-	margin-left: 20%;
-	margin-bottom: 80px;
-}
-
-.contenedorContacto{
-	width: 80%;
-	margin: auto;
-	margin-top: 7%;
+.info{
+	background-color: #333;
+	padding: 0px 50px;
 
 }
-@media (max-width: 1200px){
+.info h2{
+	color: white;
+	padding: 13px 0px;
+}
+.info h3{
+	color: red;
+	padding: 15px 0px;
+}
+.info p{
+	color: #777;
+	font-weight: bold;
+}
+.info a{
+	color: #777;
+	font-size: 25px;
+}
+.info a:hover{
+	color: red;
+	transition: 0.4s;
+}
+@media (max-width: 985px){
 	.divFormulario{
 		width: 90%;
-		display: inline-block;
-
+		margin-left: 5%;
+		display: block;
+		float: none;
 	}
 	.formulario{
-		width: 100%;
 		margin:30px auto;
-
+		width: 400px;
 }	
-	iframe{
-		width: 100%;
-		height: 400px;
-
-	}
+	.info{
+	width: 400px;
+	margin: 30px auto;
+}
 	
 
 }
