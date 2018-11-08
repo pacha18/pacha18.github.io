@@ -413,7 +413,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2b2a', end
 
 
 .modal{
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(0,0,0,0.8);
 	position:fixed;
 	top:0;
 	right:0;
