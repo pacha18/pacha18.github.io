@@ -94,6 +94,10 @@
     }
 }
 @media all and (max-width : 785px) {
+    #header img{
+        width: 80px;
+        margin-left: 20px;
+    }
     .btnPM{
         display: block;
     }
@@ -102,10 +106,7 @@
     }
     .menua{
         display: block;
-        position: absolute;
-        width:10px!important;
-        margin: 10px;
-        left:-110%;
+        
     }
     #fondo {
         display: none;
