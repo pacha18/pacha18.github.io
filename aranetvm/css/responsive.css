@@ -39,17 +39,18 @@
 .iconM{
 	visibility: visible;
 }
-.promo h2{
-    font-size: 15px;
-}
-.promo p{
-    font-size:12px;
-}
-#header img{
-    margin-left: 50px;
-}
+
 }
 @media all and (max-width : 980px) {
+    .promo h2{
+        font-size: 15px;
+    }
+    .promo p{
+        font-size:12px;
+    }
+    #header img{
+        margin-left: 50px;
+    }
     .container p{
         padding: 10px 4em 75px;
         font-size: 12px;
@@ -93,6 +94,19 @@
     }
 }
 @media all and (max-width : 785px) {
+    .btnPM{
+        display: block;
+    }
+    .btnP{
+        display: none;
+    }
+    .menua{
+        display: block;
+        position: absolute;
+        width:10px!important;
+        margin: 10px;
+        left:-110%;
+    }
     #fondo {
         display: none;
     }
@@ -106,7 +120,7 @@
     .promo h2{
         margin-bottom: 5px;
     }
-    .promo button{
+    .btnPromo{
         margin-top: 15px;
         font-size: 10px;
         padding: 5px 10px;

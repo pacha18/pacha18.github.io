@@ -20,7 +20,7 @@
 <body>
 	<header id="header">
 		<a href="#"><img src="img/logo.png"></a>
-		
+		<div clas="menua"><a href="#aviso1" class="btnPromoM btnPM">EMPIEZA TU PRUEBA GRATIS</a></div>
 		<div id="menu" >
 				<span class="icon-menu iconM" id="btm-menu"></span>
 			<ul>
@@ -34,12 +34,11 @@
 		</div>
 		
 	</header>
-	<div class=cuerpo>
 	<div class="pantalla">
 			<div class="promo">
 					<h2>BIENVENIDO A ARANET: NETVIDEO</h2>
 					<p>Disfruta de series y películas populares. Precio de lanzamiento $250, suscripción para nuevos clientes 100% bonificado (cupos limitados)</p>
-					<center><button>EMPIEZA TU PRUEBA GRATIS</button></center>
+					<br><center><a href="#aviso1" class="btnPromo btnP" >EMPIEZA TU PRUEBA GRATIS</a></center>
 				</div>
 		<img src="img/fondo.png" alt="" id="fondo">
 		<img src="img/fondo1.png" alt="" id="fondo1">
@@ -117,7 +116,21 @@
 
 					</p><br></div>
 		</div>
-	</div>
+	
+	<div id="aviso1" class="modal">
+			<div class="modalcontenido">
+				<a href="javascript:history.back(1)" class="equis"><b> X</b></a><br>
+				<form action="enviar.php" method="post" class="sub">
+						<h2>Subscribete</h2>
+							<input type="text" name="nombre" placeholder="Nombre y Apellido" required="">
+							<input type="text" name="correo" placeholder="Correo" required="">
+							<input type="text" name="DNI" placeholder="DNI" required="">
+							<input type="text" name="Telefono" placeholder="Telefono" required="">
+							<input type="submit" name="" value="Subscribirme" id="btnEnviar">
+					</form>
+				
+			</div>
+		</div>
 		<footer class="footer">
 			<div class="caja2"><h2>ARANET</h2>
 			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores sequi aspernatur laboriosam, debitis rem officiis quidem voluptatum deserunt totam doloribus provident delectus eius amet eos optio quos ducimus itaque architecto?</p></div>

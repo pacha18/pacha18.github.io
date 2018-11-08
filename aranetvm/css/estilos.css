@@ -63,7 +63,7 @@ img{
 
 	text-align: justify;
 }
-.promo button{
+.btnPromo{
 	margin-top: 25px;
 	color: white;
 	background: red;
@@ -71,8 +71,31 @@ img{
 	padding: 10px 20px;
 	font-weight: bold;
 	border-radius: 2px;
+	font-size: 14px;
 }
-
+.btnPromoM{
+	position: absolute;
+	color: white!important;
+	background: red;
+	border: none;
+	padding: 0px 5px!important;
+	font-weight: bold;
+	border-radius: 3px;
+	font-size: 8px!important;
+	width:auto;
+	height: 30px;
+	top: 8px;
+	right: 80px;
+	text-align: start;
+	line-height: 35px;
+}
+.btnPM{
+	display: none;
+}
+.menua{
+	
+     
+}
 
 /*--------------------CONTENEDOR 1--------------------*/
 .container{
@@ -168,12 +191,12 @@ box-shadow: 0px 1px 1px 0px rgba(250,118,118,1);
 #menu ul{
  position: absolute;
  right: 0px;
- margin-right: 80px;
+ margin-right: 20px;
 }
 #menu li{
 	list-style: none;
 	float: left;
-	margin: 0px 40px;
+	margin: 0px 30px;
 	
 }
 #menu li a{
@@ -373,4 +396,74 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2b2a', end
 /*-----------------------------------------------------------------------------*/
 
 
+.modal{
+	background-color: rgba(0,0,0,.8);
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	opacity:0;
+	pointer-events:none;
+	transition: all 1s;
+	z-index: 1100;
+  }
+  .modalcontenido{
+	background-color:#333;
+	width:400px;
+	padding: 10px 20px;
+	margin: 10% auto;
+	position: relative;
+	color: white;
+  }
+  .equis{
+	position: absolute;
+	text-decoration: none;
+	color: white;
+	padding: 2px 7px;
+	background: red;
+	border-radius: 3px;
+	right: 20px;
 
+  }
+  
+  #aviso:target{
+	opacity:1;
+	pointer-events:auto;
+  }
+  #aviso1:target{
+	opacity:1;
+	pointer-events:auto;
+  }
+  .sub{
+	width: 100%;
+	background: #333;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	
+}
+.sub h2{
+	color: white;
+	text-align: center;
+	margin: 0px;
+	margin-bottom: 20px;
+}
+.sub input{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 8px;
+	box-sizing: border-box;
+	font-size: 17px;
+	border:none;
+	border-bottom: 1px solid red;
+	background-color: #333;
+	color: white;
+}
+
+#btnEnviar{
+	background: red;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
